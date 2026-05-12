@@ -86,7 +86,7 @@ html {
 body {
   font-family: var(--f-body);
   background: var(--ivory);
-  color: blanchedalmond; 
+  color: var(--tx-dark); 
   line-height: 1.7;
   overflow-x: hidden;
   cursor: auto; /* Curseur personnalisé desktop */
