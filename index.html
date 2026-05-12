@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Soukare Textil Collection — Vêtements premium maliens. Bazin riche, grand boubou, sur mesure & tissus d'exception. Bamako, Mali." />
+  <meta name="theme-color" content="#0A0A0A" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Soukare Textil Collection — Luxe Malien" />
+  <meta property="og:description" content="Prêt-à-porter premium, bazin riche & sur mesure à Bamako." />
+  <meta property="og:type" content="website" />
+
+  <title>Soukare Textil Collection — L'Excellence Malienne</title>
+
+  <!-- Google Fonts : Cormorant (serif luxe) + Jost (géométrique) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Jost:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;1,300&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ════════════════════════════════════════════════════
+       PAGE LOADER
+  ════════════════════════════════════════════════════ -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <svg class="loader__logo" viewBox="0 0 120 40" fill="none">
+        <text x="0" y="32" font-family="Cormorant, serif" font-size="28" font-weight="600" fill="#C69B3C" letter-spacing="3">SK</text>
+      </svg>
+      <div class="loader__bar">
+        <div class="loader__progress" id="loaderProgress"></div>
+      </div>
+      <span class="loader__pct" id="loaderPct">0%</span>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════════════
+       CURSOR PERSONNALISÉ (desktop)
+  ════════════════════════════════════════════════════ -->
+  <div class="cursor" id="cursor" aria-hidden="true">
+    <div class="cursor__dot"></div>
+    <div class="cursor__ring"></div>
+  </div>
+
+  <!-- ════════════════════════════════════════════════════
+       HEADER
+  ════════════════════════════════════════════════════ -->
+  <header class="header" id="header">
+    <div class="header__inner">
+
+      <!-- Logo -->
+      <a href="#accueil" class="header__logo" aria-label="Soukare Textil Collection — Accueil">
+        <span class="logo__S">S</span>
+        <div class="logo__wordmark">
+          <span class="logo__brand">Soukare Textil</span>
+          <span class="logo__tag">Collection</span>
+        </div>
+      </a>
+
+      <!-- Nav desktop -->
+      <nav class="header__nav" id="mainNav" role="navigation" aria-label="Navigation principale">
+        <a href="#manifeste" class="nav__item">Manifeste</a>
+        <a href="#collections" class="nav__item">Collections</a>
+        <a href="#produits" class="nav__item">Boutique</a>
+        <a href="#savoir-faire" class="nav__item">Savoir-faire</a>
+        <a href="#contact" class="nav__item">Contact</a>
+      </nav>
+
+      <!-- Actions -->
+      <div class="header__right">
+        <button class="icon-btn" id="searchBtn" aria-label="Rechercher" title="Rechercher">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+            <circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35"/>
+          </svg>
+        </button>
+        <a class="btn-cta" href="https://wa.me/22374969071?text=Bonjour%20Soukare Textil%20Collection%2C%20je%20souhaite%20commander." target="_blank" rel="noopener">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          Commander
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Barre de recherche -->
+    <div class="search-overlay" id="searchOverlay" role="search">
+      <div class="search-overlay__inner">
+        <input type="search" id="searchInput" class="search-overlay__input"
+               placeholder="Rechercher un produit, un tissu, une collection…" autocomplete="off" />
+        <button class="search-overlay__close icon-btn" id="searchClose" aria-label="Fermer">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Overlay mobile -->
+  <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
+
+  <!-- ════════════════════════════════════════════════════
+       HERO — SCROLLYTELLING
+  ════════════════════════════════════════════════════ -->
+  <section class="hero" id="accueil" aria-label="Héros principal">
+
+    <!-- Fond vidéo / image parallaxe -->
+    <div class="hero__media" id="heroMedia">
+      <img
+        src="image/WhatsApp Image 2026-05-03 at 13.21.37.jpeg"
+        alt="Création Soukare Textil Collection — bazin riche"
+        class="hero__img"
+        id="heroImg"
+        fetchpriority="high"
+      />
+      <div class="hero__vignette"></div>
+      <!-- Grain de texture -->
+      <div class="hero__grain" aria-hidden="true"></div>
+    </div>
+
+    <!-- Contenu scrollytelling -->
+    <div class="hero__content" id="heroContent">
+      <div class="hero__eyebrow">
+        <span class="eyebrow-line"></span>
+        <span class="eyebrow-text">Bamako · Mali · Est. 2018</span>
+        <span class="eyebrow-line"></span>
+      </div>
+
+      <h1 class="hero__title" id="heroTitle">
+        <span class="hero__title-line" data-text="L'Excellence">L'Excellence</span>
+        <span class="hero__title-line hero__title-line--gold" data-text="Malienne">Malienne</span>
+        <em class="hero__title-sub">Réinventée.</em>
+      </h1>
+
+      <p class="hero__subtitle" id="heroSubtitle">
+        Bazin riche &nbsp;·&nbsp; Grand boubou &nbsp;·&nbsp; Sur mesure en 48h
+      </p>
+
+      <div class="hero__actions" id="heroActions">
+        <a href="#collections" class="btn btn--primary">
+          <span>Explorer les collections</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17 17 7M7 7h10v10"/></svg>
+        </a>
+        <a href="https://wa.me/22374969071?text=Bonjour%20Soukare Textil%2C%20je%20voudrais%20voir%20vos%20créations."
+           class="btn btn--ghost" target="_blank" rel="noopener">
+          Consulter sur WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero__scroll-hint" aria-hidden="true">
+      <div class="scroll-hint__track">
+        <div class="scroll-hint__thumb"></div>
+      </div>
+      <span>Défiler</span>
+    </div>
+
+    <!-- Bandeau de stats en bas du hero -->
+    <div class="hero__ticker" aria-label="Chiffres clés">
+      <div class="ticker__inner" id="tickerInner">
+        <span class="ticker__item"><strong>+600</strong> clients fidèles</span>
+        <span class="ticker__sep">✦</span>
+        <span class="ticker__item"><strong>48h</strong> délai sur mesure</span>
+        <span class="ticker__sep">✦</span>
+        <span class="ticker__item"><strong>100%</strong> artisanat malien</span>
+        <span class="ticker__sep">✦</span>
+        <span class="ticker__item"><strong>Livraison</strong> partout au Mali</span>
+        <span class="ticker__sep">✦</span>
+        <!-- Répété pour scroll infini -->
+        <span class="ticker__item"><strong>+600</strong> clients fidèles</span>
+        <span class="ticker__sep">✦</span>
+        <span class="ticker__item"><strong>48h</strong> délai sur mesure</span>
+        <span class="ticker__sep">✦</span>
+        <span class="ticker__item"><strong>100%</strong> artisanat malien</span>
+        <span class="ticker__sep">✦</span>
+        <span class="ticker__item"><strong>Livraison</strong> partout au Mali</span>
+        <span class="ticker__sep">✦</span>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ════════════════════════════════════════════════════
+       MANIFESTE — BRAND STORY
+  ════════════════════════════════════════════════════ -->
+  <section class="manifeste section" id="manifeste">
+    <div class="container">
+      <div class="manifeste__grid">
+
+        <div class="manifeste__text" data-reveal>
+          <span class="section-label">Notre Vision</span>
+          <h2 class="manifeste__title">
+            Chaque fil raconte<br/>une histoire.<br/>
+            <em>La vôtre.</em>
+          </h2>
+          <p class="manifeste__body">
+            Soukare Textil Collection est née d'une conviction : le vêtement malien mérite une scène mondiale. Depuis 2018, nous tissons ensemble l'héritage ancestral du bazin riche et la vision contemporaine du luxe africain.
+          </p>
+          <p class="manifeste__body">
+            Nos maîtres tailleurs, formés à l'école du détail et de la patience, confectionnent chaque pièce comme si elle était unique — parce qu'elle l'est.
+          </p>
+          <div class="manifeste__signature">
+            <span>— Équipe Soukare Textil, Bamako</span>
+          </div>
+        </div>
+
+        <div class="manifeste__visual" data-reveal data-delay="150">
+          <div class="manifeste__img-frame">
+            <img src="image/WhatsApp Image 2026-05-03 at 13.23.26.jpeg" alt="Atelier Soukare Textil Collection Bamako" loading="lazy" />
+            <div class="manifeste__img-caption">
+              <span>Atelier Soukare Textil</span>
+              <span>Hamdallaye, Bamako</span>
+            </div>
+          </div>
+          <!-- Floating card -->
+          <div class="manifeste__card">
+            <div class="manifeste__card-icon">✦</div>
+            <div>
+              <strong>Certification Artisanale</strong>
+              <span>Reconnu &amp; certifié par la Chambre des Métiers du Mali</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════
+       COLLECTIONS — BENTO GRID
+  ════════════════════════════════════════════════════ -->
+  <section class="collections section" id="collections">
+    <div class="container">
+
+      <div class="section-head" data-reveal>
+        <span class="section-label">Nos Univers</span>
+        <h2 class="section-title">Collections <em>2025 – 2026</em></h2>
+      </div>
+
+      <!-- Bento Grid -->
+      <div class="bento" role="list">
+
+        <!-- Cellule 1 — Grande (homme) -->
+        <a href="#produits" class="bento__cell bento__cell--xl" role="listitem" data-reveal>
+          <div class="bento__img-wrap">
+            <img src="image/WhatsApp Image 2026-05-03 at 13.23.29.jpeg" alt="Collection Homme — Bazin riche" loading="lazy" />
+          </div>
+
+          <div class="bento__meta">
+            <span class="bento__tag">Homme</span>
+            <h3 class="bento__name">Prestige Tissus</h3>
+            <span class="bento__link">Découvrir <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+
+        <!-- Cellule 2 — Femme -->
+        <a href="#produits" class="bento__cell" role="listitem" data-reveal data-delay="80">
+          <div class="bento__img-wrap">
+            <img src="image/WhatsApp Image 2026-05-03 at 13.21.37 (2).jpeg" alt="Collection Femme — Grand boubou" loading="lazy" />
+          </div>
+          <div class="bento__meta">
+            <span class="bento__tag">Metre de Bazin</span>
+            <h3 class="bento__name">Élégance Dorée</h3>
+            <span class="bento__link">Découvrir <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+
+        <!-- Cellule 3 — Boubou (stat card sombre) -->
+        <div class="bento__cell bento__cell--dark" role="listitem" data-reveal data-delay="100">
+          <span class="bento__stat-num">48<small>h</small></span>
+          <p class="bento__stat-label">Délai de confection <strong>sur mesure</strong> garanti</p>
+          <a href="#contact" class="btn btn--gold-sm">Prendre commande</a>
+        </div>
+
+        <!-- Cellule 4 — Tissus -->
+        <a href="#produits" class="bento__cell" role="listitem" data-reveal data-delay="120">
+          <div class="bento__img-wrap">
+            <img src="image/WhatsApp Image 2026-05-03 at 13.23.29 (2).jpeg" alt="Tissus bazin riche au mètre" loading="lazy" />
+          </div>
+          <div class="bento__meta">
+            <span class="bento__tag">Tissus</span>
+            <h3 class="bento__name">Bazin &amp; Brocart</h3>
+            <span class="bento__link">Voir les matières <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+
+        <!-- Cellule 5 — Enfant -->
+        <a href="#produits" class="bento__cell" role="listitem" data-reveal data-delay="140">
+          <div class="bento__img-wrap">
+            <img src="image/WhatsApp Image 2026-05-03 at 13.23.29 (1).jpeg" alt="Collection Enfant" loading="lazy" />
+          </div>
+          <div class="bento__meta">
+            <span class="bento__tag">Enfant</span>
+            <h3 class="bento__name">Mini Prestige</h3>
+            <span class="bento__link">Découvrir <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+
+        <!-- Cellule 6 — Sur mesure card ivoire -->
+        <a href="#contact" class="bento__cell bento__cell--ivory" role="listitem" data-reveal data-delay="160">
+          <div class="bento__icon-large" aria-hidden="true">✦</div>
+          <h3 class="bento__service-title">Sur Mesure<br/>Exclusif</h3>
+          <p class="bento__service-body">De votre prise de mesures à la livraison — une expérience personnalisée unique.</p>
+          <span class="bento__link bento__link--dark">Démarrer <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════
+       BOUTIQUE — PRODUITS (générés par JS)
+  ════════════════════════════════════════════════════ -->
+  <section class="boutique section" id="produits">
+    <div class="container">
+
+      <div class="section-head" data-reveal>
+        <span class="section-label">Sélection</span>
+        <h2 class="section-title">Nos Pièces <em>Phares</em></h2>
+        <p class="section-sub">Une curation rigoureuse des meilleures créations de notre atelier.</p>
+      </div>
+
+      <!-- Catalogue déroulant (supprimé) -->
+
+      <!-- Filtres -->
+      <div class="filters" id="filters" role="tablist" aria-label="Filtrer les produits" style="display:flex;" aria-orientation="horizontal">
+        <button class="filter active" data-cat="all" role="tab" aria-selected="true" aria-controls="productsGrid" tabindex="0">Tout</button>
+        <button class="filter" data-cat="homme" role="tab" aria-selected="false" aria-controls="productsGrid" tabindex="-1">Homme</button>
+        <button class="filter" data-cat="femme" role="tab" aria-selected="false" aria-controls="productsGrid" tabindex="-1">Femme</button>
+        <button class="filter" data-cat="boubou" role="tab" aria-selected="false" aria-controls="productsGrid" tabindex="-1">Grand Boubou</button>
+        <button class="filter" data-cat="tissu" role="tab" aria-selected="false" aria-controls="productsGrid" tabindex="-1">Tissus</button>
+      </div>
+
+
+
+      <!-- Grille produits -->
+      <div class="products-grid" id="productsGrid" role="list"></div>
+
+      <!-- CTA voir plus -->
+      <div class="boutique__more" data-reveal>
+        <p>Découvrez l'ensemble de la collection sur WhatsApp</p>
+        <a href="https://wa.me/22374969071?text=Bonjour%2C%20je%20voudrais%20voir%20tout%20le%20catalogue%20Soukare Textil%20Collection."
+           class="btn btn--primary" target="_blank" rel="noopener">
+          Voir tout le catalogue
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════
+       SAVOIR-FAIRE — SCROLLYTELLING
+  ════════════════════════════════════════════════════ -->
+  <section class="savoir-faire section" id="savoir-faire">
+    <div class="container">
+
+      <!-- En-tête -->
+      <div class="sf__head" data-reveal>
+        <span class="section-label">Notre Artisanat</span>
+        <h2 class="section-title">Un savoir-faire<br/><em>transmis de génération en génération</em></h2>
+      </div>
+
+      <!-- Timeline des étapes -->
+      <div class="sf__timeline">
+
+        <div class="sf__step" data-reveal>
+          <div class="sf__step-num" aria-hidden="true">01</div>
+          <div class="sf__step-body">
+            <div class="sf__step-img">
+              <img src="image/WhatsApp Image 2026-05-03 at 13.23.30.jpeg" alt="Sélection des tissus" loading="lazy" />
+            </div>
+            <div class="sf__step-text">
+              <h3>La Sélection des Matières</h3>
+              <p>Chaque tissu est choisi à la main parmi les meilleurs bazins, brocarts et soies d'Afrique de l'Ouest. Nous privilégions les filières artisanales locales et les matières qui vieillissent magnifiquement.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="sf__step sf__step--reverse" data-reveal data-delay="60">
+          <div class="sf__step-num" aria-hidden="true">02</div>
+          <div class="sf__step-body">
+            <div class="sf__step-img">
+              <img src="image/WhatsApp Image 2026-05-03 at 13.21.34.jpeg" alt="Coupe et patron" loading="lazy" />
+            </div>
+            <div class="sf__step-text">
+              <h3>La Coupe de Précision</h3>
+              <p>Nos maîtres tailleurs tracent chaque patron à la main, avec des décennies de maîtrise. La coupe est la première étape qui détermine la perfection de l'ajustement final.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="sf__step" data-reveal data-delay="120">
+          <div class="sf__step-num" aria-hidden="true">03</div>
+          <div class="sf__step-body">
+            <div class="sf__step-img">
+              <img src="image/WhatsApp Image 2026-05-03 at 13.21.38.jpeg" alt="Broderie artisanale" loading="lazy" />
+            </div>
+            <div class="sf__step-text">
+              <h3>La Broderie &amp; la Finition</h3>
+              <p>Les broderies sont exécutées point par point, à la main ou sur machine programmée. Chaque ornement est vérifié avant que la pièce ne soit déclarée prête à porter.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════
+       TÉMOIGNAGES
+  ════════════════════════════════════════════════════ -->
+  <section class="testimonials section" id="temoignages">
+    <div class="container">
+
+      <div class="section-head" data-reveal>
+        <span class="section-label">Confiance</span>
+        <h2 class="section-title">Ce qu'ils <em>disent</em></h2>
+      </div>
+
+      <div class="testi-grid">
+
+        <div class="testi-card" data-reveal>
+          <div class="testi-card__stars" aria-label="5 étoiles">★★★★★</div>
+          <blockquote class="testi-card__text">
+            "Mon grand boubou pour le baptême était somptueux. Le bazin, la broderie, la coupe — tout était parfait. Les invités ont demandé le contact en masse !"
+          </blockquote>
+          <div class="testi-card__author">
+
+            <div>
+              <strong>Ali K.</strong>
+              <span>Bamako, Mali</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card testi-card--featured" data-reveal data-delay="80">
+          <div class="testi-card__stars" aria-label="5 étoiles">★★★★★</div>
+          <blockquote class="testi-card__text">
+            "J'ai commandé une tenue de cérémonie en urgence. En 40 heures, elle était livrée à Bamako, ajustée à la perfection, emballée avec soin. Un service hors norme."
+          </blockquote>
+          <div class="testi-card__author">
+
+            <div>
+              <strong>Salim K.</strong>
+              <span>Styliste, Bamako</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card" data-reveal data-delay="160">
+          <div class="testi-card__stars" aria-label="5 étoiles">★★★★★</div>
+          <blockquote class="testi-card__text">
+            "Le bazin que j'ai commandé était d'une qualité exceptionnelle. Livraison à Sikasso en deux jours. Je commande régulièrement, jamais déçu."
+          </blockquote>
+          <div class="testi-card__author">
+
+            <div>
+              <strong>Ibrahim T.</strong>
+              <span>Sikasso, Mali</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Rating global -->
+      <div class="rating-banner" data-reveal>
+        <div class="rating-banner__score">4.9</div>
+        <div class="rating-banner__body">
+          <div class="rating-banner__stars" aria-label="Note 4.9 sur 5">★★★★★</div>
+          <p>Note moyenne sur <strong>312 avis</strong> clients vérifiés</p>
+        </div>
+        <div class="rating-banner__logos" aria-label="Avis provenant de">
+          <span>WhatsApp</span>
+          <span>Instagram</span>
+          <span>Facebook</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════
+       TRUST — CONFIANCE & SÉCURITÉ
+  ════════════════════════════════════════════════════ -->
+  <section class="trust section" id="confiance">
+    <div class="container">
+
+      <div class="trust__grid">
+
+        <div class="trust__item" data-reveal>
+          <div class="trust__icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <path d="m9 12 2 2 4-4"/>
+            </svg>
+          </div>
+          <h4>Paiement Sécurisé</h4>
+          <p>Orange Money, Moov Money, virement bancaire. Transaction 100% sécurisée.</p>
+        </div>
+
+        <div class="trust__item" data-reveal data-delay="60">
+          <div class="trust__icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <h4>Livraison Express</h4>
+          <p>Bamako : livraison le jour même. Tout le Mali sous 24–72h garantis.</p>
+        </div>
+
+        <div class="trust__item" data-reveal data-delay="120">
+          <div class="trust__icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+              <polyline points="9 22 9 12 15 12 15 22"/>
+            </svg>
+          </div>
+          <h4>Boutique Physique</h4>
+          <p>Visitez notre atelier à Hamdallaye ACI 2000, Bamako. Ouvert 7j/7.</p>
+        </div>
+
+        <div class="trust__item" data-reveal data-delay="180">
+          <div class="trust__icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.44 2 2 0 0 1 3.59 1.26h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6.29 6.29l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+          </div>
+          <h4>Support 7j/7</h4>
+          <p>Notre équipe répond sur WhatsApp de 7h à 22h, tous les jours.</p>
+        </div>
+
+      </div>
+
+      <!-- Bandeau paiement -->
+      <div class="payment-strip" data-reveal>
+        <span class="payment-strip__label">Moyens de paiement acceptés</span>
+        <div class="payment-strip__logos">
+          <span class="pay-logo">Orange Money</span>
+          <span class="pay-logo">Moov Money</span>
+          <span class="pay-logo">Wave</span>
+          <span class="pay-logo">Virement</span>
+          <span class="pay-logo">Espèces</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════
+       CONTACT & DEVIS
+  ════════════════════════════════════════════════════ -->
+  <section class="contact section" id="contact">
+    <div class="container">
+
+      <div class="contact__wrap">
+
+        <!-- Formulaire -->
+        <div class="contact__form-col" data-reveal>
+          <span class="section-label">Devis Gratuit</span>
+          <h2 class="section-title">Commencez votre<br/><em>commande</em></h2>
+          <p class="section-sub">Remplissez ce formulaire, nous vous répondons sur WhatsApp en moins de 2h.</p>
+
+          <form class="form" id="contactForm" novalidate autocomplete="on">
+
+            <div class="form__row">
+              <div class="form__field">
+                <label for="f-nom">Nom complet<abbr title="Obligatoire">*</abbr></label>
+                <input type="text" id="f-nom" name="nom" placeholder="Ex : Aminata Coulibaly" autocomplete="name" required />
+              </div>
+              <div class="form__field">
+                <label for="f-tel">WhatsApp<abbr title="Obligatoire">*</abbr></label>
+                <input type="tel" id="f-tel" name="tel" placeholder="+223 7X XX XX XX" autocomplete="tel" required />
+              </div>
+            </div>
+
+            <div class="form__field">
+              <label for="f-type">Type de commande<abbr title="Obligatoire">*</abbr></label>
+              <div class="form__select-wrap">
+                <select id="f-type" name="type" required>
+                  <option value="">Choisissez…</option>
+                  <option value="boubou">Grand Boubou</option>
+                  <option value="costume">Costume / Complet</option>
+                  <option value="bazin">Tenue Bazin Riche</option>
+                  <option value="femme">Tenue Femme Traditionnelle</option>
+                  <option value="enfant">Tenue Enfant</option>
+                  <option value="tissu">Achat de Tissu au mètre</option>
+                  <option value="autre">Autre</option>
+                </select>
+                <svg class="form__select-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+              </div>
+            </div>
+
+            <div class="form__row">
+              <div class="form__field">
+                <label for="f-occ">Occasion</label>
+                <input type="text" id="f-occ" name="occasion" placeholder="Mariage, cérémonie, voyage…" />
+              </div>
+              <div class="form__field">
+                <label for="f-budget">Budget approximatif</label>
+                <div class="form__select-wrap">
+                  <select id="f-budget" name="budget">
+                    <option value="">Non précisé</option>
+                    <option value="moins25k">– de 25 000 FCFA</option>
+                    <option value="25-50k">25 000 – 50 000 FCFA</option>
+                    <option value="50-100k">50 000 – 100 000 FCFA</option>
+                    <option value="plus100k">+ de 100 000 FCFA</option>
+                  </select>
+                  <svg class="form__select-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="form__field">
+              <label for="f-msg">Détails de votre commande<abbr title="Obligatoire">*</abbr></label>
+              <textarea id="f-msg" name="message" rows="4" placeholder="Couleurs souhaitées, coupe, broderies, délai…" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+              Envoyer ma demande via WhatsApp
+            </button>
+
+            <p class="form__privacy">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Vos données sont confidentielles. Réponse garantie sous 2h.
+            </p>
+
+          </form>
+        </div>
+
+        <!-- Infos contact -->
+        <div class="contact__info-col" data-reveal data-delay="100">
+
+          <div class="contact-card">
+            <h3 class="contact-card__title">Nous contacter</h3>
+
+            <a class="contact-row contact-row--wa"
+               href="https://wa.me/22374969071" target="_blank" rel="noopener">
+              <div class="contact-row__icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              </div>
+              <div>
+                <strong>WhatsApp</strong>
+                <span>+223 74 96 90 71</span>
+              </div>
+              <svg class="contact-row__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+
+            <div class="contact-row">
+              <div class="contact-row__icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <strong>Boutique</strong>
+                <span>Hamdallaye ACI 2000, Bamako</span>
+              </div>
+            </div>
+
+            <div class="contact-row">
+              <div class="contact-row__icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              </div>
+              <div>
+                <strong>Horaires</strong>
+                <span>Lun–Dim : 8h00 – 20h00</span>
+              </div>
+            </div>
+
+            <!-- Réseaux sociaux -->
+            <div class="contact-socials">
+              <p>Suivez nos créations</p>
+              <div class="socials">
+                <a href="#" class="social" aria-label="Instagram">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+                </a>
+                <a href="#" class="social" aria-label="Facebook">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                </a>
+                <a href="#" class="social" aria-label="TikTok">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.79 1.54V6.78a4.85 4.85 0 01-1.02-.09z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carte horaires -->
+          <div class="hours-card">
+            <h4>Disponibilités</h4>
+            <dl class="hours-list">
+              <dt>Lun – Ven</dt><dd>08:00 – 19:00</dd>
+              <dt>Samedi</dt><dd>08:00 – 20:00</dd>
+              <dt>Dimanche</dt><dd>10:00 – 18:00</dd>
+            </dl>
+            <p class="hours-wa">WhatsApp disponible 7j/7 · 07:00 – 22:00</p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+
+    <div class="footer__top">
+      <div class="container footer__top-inner">
+
+        <div class="footer__brand">
+          <a href="#accueil" class="header__logo footer-logo" aria-label="Retour en haut">
+            <span class="logo__f">S</span>
+            <div class="logo__wordmark">
+              <span class="logo__brand">Soukare Textil</span>
+              <span class="logo__tag">Collection</span>
+            </div>
+          </a>
+          <p>L'excellence malienne réinventée. Bazin riche, grand boubou et sur mesure à Bamako.</p>
+          <!-- NAP (Name Address Phone) — signal SEO et confiance -->
+          <address class="footer__nap">
+            <span>Hamdallaye ACI 2000, Bamako, Mali</span>
+            <a href="tel:+22374969071">+223 74 96 90 71</a>
+          </address>
+          <div class="socials">
+            <a href="#" class="social" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg></a>
+            <a href="#" class="social" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="#" class="social" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.79 1.54V6.78a4.85 4.85 0 01-1.02-.09z"/></svg></a>
+          </div>
+        </div>
+
+        <nav class="footer__col" aria-label="Navigation secondaire">
+          <h5>Navigation</h5>
+          <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#manifeste">Notre histoire</a></li>
+            <li><a href="#collections">Collections</a></li>
+            <li><a href="#produits">Boutique</a></li>
+            <li><a href="#savoir-faire">Savoir-faire</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer__col" aria-label="Collections">
+          <h5>Collections</h5>
+          <ul>
+            <li><a href="#collections">Homme</a></li>
+            <li><a href="#collections">Femme</a></li>
+            <li><a href="#collections">Enfant</a></li>
+            <li><a href="#collections">Grand Boubou</a></li>
+            <li><a href="#collections">Bazin &amp; Tissus</a></li>
+            <li><a href="#contact">Sur Mesure 48h</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__col footer__contact-col">
+          <h5>Contact direct</h5>
+          <p><strong>WhatsApp &amp; Appel</strong></p>
+          <a href="https://wa.me/22374969071" class="footer__wa-link">+223 74 96 90 71</a>
+          <p style="margin-top:1rem"><strong>Horaires boutique</strong></p>
+          <p>Lun–Sam : 8h – 19h</p>
+          <a href="https://wa.me/22374969071?text=Bonjour%20Soukare Textil%20Collection%2C%20je%20souhaite%20commander."
+             class="btn btn--primary" style="margin-top:1.25rem" target="_blank" rel="noopener">
+            Commander maintenant
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p>© 2025 Soukare Textil Collection — Bamako, Mali. Tous droits réservés.</p>
+        <nav class="footer__legal" aria-label="Mentions légales">
+          <a href="#">Mentions légales</a>
+          <a href="#">Politique de confidentialité</a>
+          <a href="#">CGV</a>
+        </nav>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- ════════════════════════════════════════════════════
+       CTA STICKY (thumb zone mobile)
+  ════════════════════════════════════════════════════ -->
+  <div class="sticky-cta" id="stickyCta" aria-label="Commande rapide">
+
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="section-label">Confidentialité</span>
+        <h2 class="section-title">Politique de <em>confidentialité</em></h2>
+      </div>
+
+      <div class="legal__content" data-reveal>
+        <p>
+          Nous collectons uniquement les informations nécessaires à la prise de contact et au traitement de votre demande (nom, WhatsApp, type de commande et message).
+        </p>
+        <h3>Finalité</h3>
+        <ul>
+          <li>Répondre à vos demandes et établir un devis.</li>
+          <li>Vous guider pour la commande (couleurs, tailles, délais).</li>
+        </ul>
+        <h3>Durée de conservation</h3>
+        <p>
+          Les données sont conservées le temps nécessaire au traitement de votre demande, puis supprimées selon les règles applicables.
+        </p>
+        <h3>Vos droits</h3>
+        <p>
+          Vous pouvez demander l’accès, la rectification ou la suppression de vos données en nous contactant.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="legal section" id="cgv">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="section-label">Conditions</span>
+        <h2 class="section-title">CGV &amp; <em>livraison</em></h2>
+      </div>
+
+      <div class="legal__content" data-reveal>
+        <h3>Commande</h3>
+        <p>
+          Les commandes sont effectuées via WhatsApp. Nous confirmons les détails (modèle, tissus, couleurs), le délai de confection et le montant.
+        </p>
+
+        <h3>Délais</h3>
+        <p>
+          En moyenne, la confection sur mesure est réalisée en 48h (selon la complexité et la disponibilité des matières). Les délais peuvent varier en période de forte demande.
+        </p>
+
+        <h3>Livraison</h3>
+        <p>
+          Livraison disponible à Bamako (souvent le jour même) et dans l’ensemble du Mali (selon localisation). Un délai estimatif vous est communiqué avant validation.
+        </p>
+
+        <h3>Paiement</h3>
+        <p>
+          Paiement par Orange Money, Moov Money, virement bancaire, espèces (selon accord). Une confirmation de paiement est requise avant la livraison/confection finale.
+        </p>
+
+        <h3>Retours / échanges</h3>
+        <p>
+          Toute demande de modification ou d’échange doit être formulée dès que possible. Si un ajustement est encore réalisable avant finalisation, nous cherchons la meilleure solution.
+        </p>
+
+        <h3>Responsabilité</h3>
+        <p>
+          Les informations fournies sur le site sont indicatives. Les caractéristiques exactes (couleurs, broderies) sont confirmées lors de l’échange WhatsApp.
+        </p>
+      </div>
+
+      <!-- FAQ SEO -->
+      <div class="faq section" id="faq" aria-label="Foire aux questions" style="padding-top:0;">
+
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Combien de temps faut-il pour une tenue sur mesure ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "En moyenne, la confection sur mesure est réalisée en 48h. Pour les pièces très complexes, nous vous confirmons le délai exact après validation des détails."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Est-ce que vous livrez partout au Mali ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Oui. Bamako est généralement livré rapidement (souvent le jour même). Pour les autres villes, un délai estimatif est communiqué selon la distance."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Comment commander si je n’ai pas le modèle exact ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Vous pouvez envoyer vos inspirations (photo) et vos préférences via WhatsApp. Nous vous proposons la meilleure combinaison de tissus, coupe et finitions."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Quels moyens de paiement acceptez-vous ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Orange Money, Moov Money, virement bancaire, espèces (selon accord). Nous confirmons le paiement avant finalisation/livraison."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Puis-je demander des retouches après livraison ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Si l’ajustement est réalisable et que les détails validés ne sont pas respectés, nous vous accompagnons. Contactez-nous rapidement pour évaluer la meilleure solution."
+              }
+            }
+          ]
+        }
+        </script>
+        <div class="section-head" data-reveal>
+          <span class="section-label">FAQ</span>
+          <h2 class="section-title">Questions <em>fréquentes</em></h2>
+        </div>
+
+        <div class="faq__grid" data-reveal>
+          <div class="faq__item">
+            <button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-1" data-accordion-trigger="faq-1" data-accordion-panel="#faq-1">
+              Combien de temps faut-il pour une tenue sur mesure ?
+            </button>
+            <div class="faq__a" id="faq-1" role="region" aria-hidden="true" style="max-height:0;overflow:hidden;">
+              <p>
+                En moyenne, la confection sur mesure est réalisée en 48h. Pour les pièces très complexes, nous vous confirmons le délai exact après validation des détails.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-2" data-accordion-trigger="faq-2" data-accordion-panel="#faq-2">
+              Est-ce que vous livrez partout au Mali ?
+            </button>
+            <div class="faq__a" id="faq-2" role="region" aria-hidden="true" style="max-height:0;overflow:hidden;">
+              <p>
+                Oui. Bamako est généralement livré rapidement (souvent le jour même). Pour les autres villes, un délai estimatif est communiqué selon la distance.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-3" data-accordion-trigger="faq-3" data-accordion-panel="#faq-3">
+              Comment commander si je n’ai pas le modèle exact ?
+            </button>
+            <div class="faq__a" id="faq-3" role="region" aria-hidden="true" style="max-height:0;overflow:hidden;">
+              <p>
+                Vous pouvez envoyer vos inspirations (photo) et vos préférences via WhatsApp. Nous vous proposons la meilleure combinaison de tissus, coupe et finitions.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <div class="faq__a" id="faq-4" role="region" aria-hidden="true" style="max-height:0;overflow:hidden;">
+              <p>
+                Orange Money, Moov Money, virement bancaire, espèces (selon accord). Nous confirmons le paiement avant finalisation/livraison.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-5" data-accordion-trigger="faq-5">
+              Puis-je demander des retouches après livraison ?
+            </button>
+            <div class="faq__a" id="faq-5" role="region" aria-hidden="true" style="max-height:0;overflow:hidden;">
+              <p>
+                Si l’ajustement est réalisable et que les détails validés ne sont pas respectés, nous vous accompagnons. Contactez-nous rapidement pour évaluer la meilleure solution.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════
+       FAQ LEGAL
+  ════════════════════════════════════════════════════ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Soukare Textil Collection",
+    "url": "https://fakhamacollection.com/",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Hamdallaye ACI 2000",
+      "addressLocality": "Bamako",
+      "addressCountry": "ML"
+    },
+    "telephone": "+22374969071"
+  }
+  </script>
+
+  <!-- ════════════════════════════════════════════════════
+       CTA STICKY (thumb zone mobile)
+  ════════════════════════════════════════════════════ -->
+  <div class="sticky-cta" id="stickyCta" aria-label="Commande rapide">
+    <a href="https://wa.me/22374969071?text=Bonjour%20Soukare Textil%20Collection%2C%20je%20veux%20commander."
+       class="sticky-cta__btn" target="_blank" rel="noopener">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+      Commander via WhatsApp
+    </a>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast" role="alert" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
